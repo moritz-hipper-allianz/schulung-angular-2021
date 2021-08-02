@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mospizza';
+  title = 'Testpizzaheader';
+
+  pizzaMenueItems = ["Salami", "Qattro Stagioni", "Vier Käse", "Schinken", "Champignion"];
 }
