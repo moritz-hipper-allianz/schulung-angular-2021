@@ -6,8 +6,25 @@ header {
     width: 100%;
     z-index: 1;
     background-color: wheat;
+    display: flex;
+    align-items: center;
     h1 {
         font-size: 1.3em;
-        line-height: 1.3em;
+        margin-right: 16px;
+    }
+    a {
+        margin-right: 8px;
+        text-decoration: none;
+        transition: border .2s;
+        border-bottom: 2px solid wheat;
+        padding: 4px;
+        &:hover {
+        border-bottom: 2px solid rgb(39, 35, 27);
+           
+  
+        }
+    }
+    a, h1 {
+        color: rgb(39, 35, 27)
     }
 }

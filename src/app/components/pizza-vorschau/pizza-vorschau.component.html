@@ -1,6 +1,7 @@
 <div class="header">
-    {{header}}
+    {{pizza.name}}
 </div>
 <div class="preview">
     <img src="../../../assets/pizza_salami.png">
 </div>
+<div class="dailyspecial__wrapper" *ngIf="pizza.isDailySpecial">Tagesangebot</div>

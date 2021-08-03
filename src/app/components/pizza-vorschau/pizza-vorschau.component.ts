@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PizzaVorschauComponent implements OnInit {
 
-  @Input() header;
+  @Input() pizza;
 
   constructor() { }
 

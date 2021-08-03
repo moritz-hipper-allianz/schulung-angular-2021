@@ -1,0 +1,23 @@
+<form [formGroup]="vorschlagForm" (ngSubmit)="submit()">
+    <label for="name">
+        Name
+    </label>
+    <input type="text" formControlName="name" id="name" />
+
+    <label for="beschreibung">
+        Beschreibung
+    </label>
+    <textarea formControlName="beschreibung" id="beschreibung"></textarea>
+    <button type="submit" [disabled]="!vorschlagForm.valid">Absenden</button>
+</form>
+
+<div class="vorschau__wrapper" >
+    <div class="pizza">
+
+        <app-pizza-vorschau [pizza]="{'name': vorschlagForm.value.name}"></app-pizza-vorschau>
+    </div>
+    <div class="beschreibung">
+        <h4>Was macht diese Pizza besonders?</h4>
+        <div class="vorschau__beschreibung">{{vorschlagForm.value.beschreibung}}</div>
+    </div>
+</div>

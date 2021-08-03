@@ -31,4 +31,24 @@
     &:hover{
         transform: scale(1.05);
     }
+    .dailyspecial__wrapper {
+        position: absolute;
+        animation: blink 1s infinite;  
+        font-weight: bold;
+        transform: rotate(-20deg) translate(-10px, -20px);
+        background-color: rgb(177, 160, 130);
+        padding: 3px 5px;
+        border-radius: 5px;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.46);
+
+    }
+}
+@keyframes blink {
+    0% {
+        transform: scale(1) rotate(-20deg) translate(-10px, -20px);
+    }
+    50% {
+        transform: scale(1.2) rotate(-15deg) translate(-10px, -10px);
+    }
+ 
 }

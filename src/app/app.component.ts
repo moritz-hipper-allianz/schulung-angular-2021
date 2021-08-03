@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Testpizzaheader';
 
-  pizzaMenueItems = ["Salami", "Qattro Stagioni", "Vier Käse", "Schinken", "Champignion"];
 }
